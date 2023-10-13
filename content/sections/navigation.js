@@ -7,6 +7,7 @@ import { Container } from "./style"
 
 
 export default class Navigation extends Component {
+ 
     state = {
         mobileMenuOpen: false,
         hasScrolled: false,
@@ -40,13 +41,16 @@ export default class Navigation extends Component {
 
     render() {
         const { mobileMenuOpen } = this.state
+        const emailAddress = 'saurabhp643@gmail.com';
+        const phoneNumber = '9935417773';
 
         return (
+          
             <Nav {...this.props} scrolled={this.state.hasScrolled}>
                 <StyledContainer>
                     <Brand>
                         <Link to="/" onClick={this.closeMobileMenu}>
-                            <h2>ZLURI</h2>
+                            <h2>SAURABH PANDEY</h2>
                         </Link>
                     </Brand>
                     <Mobile>
@@ -66,13 +70,13 @@ export default class Navigation extends Component {
                         <NavListWrapper>
                             <ul>
                                 <NavItem>
-                                    <a href="">Email</a>
+                                    <a href={`mailto:${emailAddress}`}>Email</a>
                                 </NavItem>
                                 <NavItem>
-                                    <a href="">Contact me</a>
+                                    <a href={`tel:${phoneNumber}`}>Contact me</a>
                                 </NavItem>
                                 <ActionsContainer>
-                                    <a href="https://get.zluri.com/request-demo">
+                                <a href="/my_resume.pdf" download>
                                         <button>Resume</button>
                                     </a>
                                 </ActionsContainer>
@@ -86,13 +90,13 @@ export default class Navigation extends Component {
                             <NavListWrapperMobile mobile={true}>
                                 <ul>
                                     <NavItemMobile>
-                                        <a href="">Email</a>
+                                        <a href={`mailto:${emailAddress}`}>Email</a>
                                     </NavItemMobile>
                                     <NavItemMobile>
-                                        <a href="">Contact me</a>
+                                        <a href={`tel:${phoneNumber}`}>Contact me</a>
                                     </NavItemMobile>
                                     <ActionsContainer>
-                                        <a href="https://get.zluri.com/request-demo">
+                                    <a href="/my_resume.pdf" download>
                                             <button>Resume</button>
                                         </a>
                                     </ActionsContainer>

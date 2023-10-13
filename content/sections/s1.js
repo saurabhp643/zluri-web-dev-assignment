@@ -1,6 +1,7 @@
 import React from "react";
 import styled from 'styled-components';
 import { Container, Wrapper } from "./style";
+import Selected from "./Selected";
 
 const S1 = () => {
     return (
@@ -9,6 +10,7 @@ const S1 = () => {
                 <Title>
                     <h4>
                         Solution Here
+                        <Selected/>
                     </h4>
                     <p>Answer below this.</p>
                 </Title>

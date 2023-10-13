@@ -1,6 +1,7 @@
 import React from "react";
 import styled from 'styled-components';
 import { Container } from "./style";
+import Selected from "./Selected";
 
 const S5 = () => {
     return (
@@ -11,8 +12,9 @@ const S5 = () => {
                 </h4>
                 <p>Put the created component below this.</p>
             </Title>
-            
+           
         </Container>
+         <Selected/>
     )
 }
 

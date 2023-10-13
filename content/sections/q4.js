@@ -2,6 +2,7 @@ import React from "react";
 import styled from 'styled-components';
 import { Container, Wrapper } from "./style";
 import dropdown from "../images/dropdown-trial.png"
+import Selected from "./Selected";
 
 const Q3 = () => {
     return (
@@ -19,6 +20,7 @@ const Q3 = () => {
                         <a href="https://www.figma.com/proto/kPxYk2EWTMsBmx4lAc92ni/Web-Dev-Assignment?type=design&node-id=36-559&t=YPqmYSs8rLq2ahId-1&scaling=min-zoom&page-id=30%3A35&starting-point-node-id=36%3A230" target="_blank" ><PrototypeButton>Prototype</PrototypeButton></a>
                     </AnswerDiv>
                 </QuestionsGrid>
+               
             </StyledContainer>
         </StyledWrapper>
     )

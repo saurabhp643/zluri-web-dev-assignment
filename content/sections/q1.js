@@ -19,26 +19,12 @@ const Q1 = () => {
                         <li>Ensure that the grid elements resize and reposition themselves gracefully on different devices.</li>
                     </ol>
                 </List>
-                <QuestionsDiv>
-                    <FlexColumn>
-                        <FlexRow>
-                            <FlexItem>
-                                1st
-                            </FlexItem>
-                            <FlexItem>
-                                2nd
-                            </FlexItem>
-                        </FlexRow>
-                        <FlexRow>
-                            <FlexItem>
-                                3rd
-                            </FlexItem>
-                            <FlexItem>
-                                4th
-                            </FlexItem>
-                        </FlexRow>
-                    </FlexColumn>
-                </QuestionsDiv>
+                <GridContainer>
+      <GridItem>1st</GridItem>
+      <GridItem>2nd</GridItem>
+      <GridItem>3rd</GridItem>
+      <GridItem>4th</GridItem>
+    </GridContainer>
             </Container>
         </StyledWrapper>
     )
@@ -99,3 +85,14 @@ background:#FFFFFF;
 border: 1px solid #000000;
 border-radius: 20px;
 `
+const GridContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+`;
+const GridItem = styled.div`
+  padding: 80px;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 20px;
+`;
